@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+  <link rel="stylesheet" href="../css/weather.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div>
+    <a href="/index" class= "home"><i class="fa fa-reply"></i></a>
+  </div>
+  <div class="weather-side">
+    <div class="weather-gradient"></div>
+    <div class="date-container">
+      <h2 class="date-dayname" id="hour"></h2><span class="day" id="date"></span><i class="location-icon" data-feather="map-pin"></i><span class="location">New York, US</span>
+    </div>
+    <div class="weather-container"><image class="weather-icon" id="currentIcon" src="http://openweathermap.org/img/wn/10d@2x.png"></image>
+      <h1 class="weather-temp" id="currentTemp"></h1>
+      <h3 class="weather-desc" id="desc"></h3>
+    </div>
+  </div>
+  <div class="info-side">
+    <div class="today-info-container">
+      <div class="today-info">
+        <div class="precipitation"> <span class="title">PRESSURE</span><span class="value" id="pressure"></span>
+          <div class="clear"></div>
+        </div>
+        <div class="humidity"> <span class="title">HUMIDITY</span><span class="value" id="humidity"></span>
+          <div class="clear"></div>
+        </div>
+        <div class="wind"> <span class="title">WIND</span><span class="value" id="wind"></span>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="week-container">
+      <ul class="week-list">
+        <li class="active"><image class="day-icon" id="icon0"></image><span class="day-name" id="hour0"></span><span class="day-temp" id="temp0"></span></li>
+        <li><image class="day-icon" id="icon1"></i><span class="day-name" id="hour1"></span><span class="day-temp" id="temp1"></span></li>
+        <li><image class="day-icon" id="icon2"></i><span class="day-name" id="hour2"></span><span class="day-temp" id="temp2"></span></li>
+        <li><image class="day-icon" id="icon3"></i><span class="day-name" id="hour3"></span><span class="day-temp" id="temp3"></span></li>
+        <div class="clear"></div>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../js/weather.js"></script>
+
+</body>
+</html>
