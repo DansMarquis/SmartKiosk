@@ -9,7 +9,9 @@
 
 import os.path
 import cherrypy
-
+import json
+from json import JSONEncoder
+from enum import Enum
 # The absolute path to this file's base directory:
 baseDir = os.path.dirname(os.path.abspath(__file__))
 
@@ -26,16 +28,22 @@ config = {
 			   "tools.staticdir.dir": "img"  }          
 }
 
+class MyEncoder(JSONEncoder):
+   def default(self, o):
+      return o.__dict__  
+
 class Root:
 
-   dest= ""
+   def __init__(self,dest,eventList,publicityList):
+      self.dest= dest
+      self.eventList= eventList
+      self.publicityList= publicityList       
 
    @cherrypy.expose
    def index(self):
       path= "html/index.html"
       return (open(path,"rb").read())
 
-   
    @cherrypy.expose
    def events(self):
       cherrypy.response.headers["Content-Type"] = "text/html"
@@ -62,4 +70,41 @@ class Root:
    def getDirections(self):
       return self.dest
 
-cherrypy.quickstart(Root(), "/", config)
+   @cherrypy.expose
+   def getEventsList(self):
+      return json.dumps(self.eventList,cls=MyEncoder)
+
+class EventType(Enum):
+   Cultural= 1
+   Musical= 2
+   Sports= 3
+   Family= 4
+   Religious= 5
+
+class EventAge(Enum):
+   M3= 1
+   M6= 2
+   M12= 3
+   M16= 4
+   M18= 5    
+
+class Event:
+       
+   def __init__(self,image,name,etype,age,date,cord, tickets):
+      self.image= image
+      self.name= name
+      self.etype= etype
+      self.age= age
+      self.date= date
+      self.cord= cord
+      self.tickets= tickets
+
+   def sellTicket(self):
+      self.ticket-= 1   
+
+
+e0= Event("../img/teatro.jpg", "Theatre Play", EventType.Cultural.name, EventAge.M12.name, 1576620000, [40.763278, -73.983159], 250)
+e1= Event("../img/concerto.jpg", "Outside Concert", EventType.Musical.name, EventAge.M3.name, 1576681200, [40.785091, -73.968285], 100)
+e2= Event("../img/futebol.jpg", "Football Game", EventType.Sports.name, EventAge.M3.name, 1576783800, [40.829643, -73.926175], 3500)
+
+cherrypy.quickstart(Root("",[e0,e1,e2],[]), "/", config)

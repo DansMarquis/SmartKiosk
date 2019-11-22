@@ -1,8 +1,16 @@
-const year = new Date().getFullYear(); 
-var eventos = new Array(
-  {"image":"url(../img/teatro.jpg)", "name": "Theatre Play","type": "Cultural Event", "age": "M12", "date": new Date("December 17, 2019 22:00:00"), "cord": [40.763278, -73.983159]},
-  {"image":"url(../img/concerto.jpg)", "name": "Outside Concert","type": "Musical Event", "age": "M3", "date": new Date("December 18, 2019 15:00:00"), "cord": [40.785091, -73.968285]},
-  {"image":"url(../img/futebol.jpg)", "name": "Football Game" ,"type": "Sports Event", "age": "M3", "date": new Date("December 19, 2019 19:30:00"), "cord": [40.829643, -73.926175]});
+const year = new Date().getFullYear();
+var eventos= getEvents();
+
+function getEvents(){
+  var dict= {};
+  $.ajaxSetup({async: false});
+  $.get("getEventsList", function(data){
+    console.log(data); 
+    dict= JSON.parse(data);      
+  });
+  console.log(dict);
+  return dict;
+} 
 var current= 0;
 
   $(document).ready(function(){
@@ -12,18 +20,18 @@ var current= 0;
   function nextBackground() {
     current++;
     current = current % eventos.length;
-    $('html').css('background-image', eventos[current].image);
+    $('html').css('background-image', 'url('+eventos[current].image+')');
     document.getElementById("title").innerHTML = "<div class=\"title\">" + eventos[current].name + "</div>";
     document.getElementById("description").innerHTML = "<div class=\"description\">" 
-      + eventos[current].type + ", "+ eventos[current].age + ", "+ eventos[current].date.toUTCString()  + "</div>";
+      + eventos[current].etype + ", "+ eventos[current].age + ", "+ new Date(eventos[current].date*1000).toUTCString()  + "</div>";
     setDirections();  
   }
   setInterval(nextBackground, 15000);
 
-  $('html').css('background-image', eventos[0].image);
+  $('html').css('background-image', 'url('+eventos[0].image+')');
   document.getElementById("title").innerHTML = "<div class=\"title\">" + eventos[0].name + "</div>";
   document.getElementById("description").innerHTML = "<div class=\"description\">" 
-      + eventos[0].type + ", "+ eventos[0].age + ", "+ eventos[0].date.toUTCString()  + "</div>";
+      + eventos[0].etype + ", "+ eventos[0].age + ", "+ new Date(eventos[0].date*1000).toUTCString()  + "</div>";
   setDirections();    
 })
 
@@ -35,7 +43,7 @@ let timer = setInterval(function() {
   const today = new Date().getTime();
 
   // get the difference
-  const diff = eventos[current].date.getTime() - today;
+  const diff = new Date(eventos[current].date*1000).getTime() - today;
 
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
