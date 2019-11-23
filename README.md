@@ -1,5 +1,9 @@
 # SmartKiosk
 
+**Website**
+https://danielmarquesdm32.wixsite.com/insights
+
+
 **Dashboard do Gestor da distribuição de conteúdo nos kiosks:**
 
 	- Abrir o /DashbordInsights-Manager/dashboard.html
