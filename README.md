@@ -33,7 +33,8 @@ http://127.0.0.1:5002
 
 
 **Smart Kiosk:**
-	An Interactive KIOSK web application, using CherryPy, that allows the user to get information about the events taking place in a city, about the weather and giving the user directions and traffic information
+
+An Interactive KIOSK web application, using CherryPy, that allows the user to get information about the events taking place in a city, about the weather and giving the user directions and traffic information
 
 	-How to Run:
 
