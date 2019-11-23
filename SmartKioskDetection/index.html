@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Insights</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/assets/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/assets/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/assets/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/assets/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+      .bg_video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .video-mask {
+        width: 400px;
+        border-radius: 40px;
+        overflow: hidden;
+      }
+      #myVideo {
+        min-height: 100%;
+      }
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 300px;
+      }
+
+      .image-txt-container {
+        margin-left: 10px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body onload="main()">
+    <video autoplay loop poster="images/torres.jpg" class="bg_video">
+      <source src="/assets/backw.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <div class="video-mask">
+        <canvas id="canvas" class="canvas" width="400px"></canvas>
+        <div id="displacement"></div>
+      </div>
+
+      <div
+        id="emotion"
+        style="background-color:white; padding: 5px;"
+        class="video-mask"
+      >
+        <div id="emotion-anger">
+          <img src="/assets/icons/angry.png" alt="" style="width:100%" />
+        </div>
+        <div id="emotion-fear">
+          <img src="/assets/icons/fear.png" alt="" style="width:100%" />
+        </div>
+        <div id="emotion-happy">
+          <img src="/assets/icons/happy.png" alt="" style="width:100%" />
+        </div>
+        <div id="emotion-sad">
+          <img src="/assets/icons/sad.png" alt="" style="width:100%" />
+        </div>
+        <div id="emotion-surprise">
+          <img src="/assets/icons/surprise.png" alt="" style="width:100%" />
+        </div>
+      </div>
+
+
+
+      <div class="container2">
+        <div class="image-txt-container">
+          <img
+            src="/assets/people.png"
+            alt=""
+            style="width:40px;padding-left:10px;"
+          />
+          <span style="padding-left:10px;"><b>People Count:</b> </span
+          ><span id="people" style="padding-left:10px;"> 0</span>
+        </div>
+        <br />
+        <div class="image-txt-container">
+          <img
+            src="/assets/stats.png"
+            alt=""
+            style="width:35px; padding-left:10px;"
+          />
+          <span style="padding-left:10px; "><b>Emotions Count:</b> </span
+          ><span id="emotions" style="padding-left:10px;"> 0</span>
+        </div>
+        <br />
+        <div class="image-txt-container">
+          <img
+            src="/assets/icons/angry.png"
+            alt=""
+            style="width:25px; padding-left:10px;"
+          />
+          <span style="padding-left:10px; "><b>Anger:</b> </span
+          ><span id="anger" style="padding-left:10px;"> 0</span>%
+        </div>
+        <br />
+        <div class="image-txt-container">
+          <img
+            src="/assets/icons/fear.png"
+            alt=""
+            style="width:25px; padding-left:10px;"
+          />
+          <span style="padding-left:10px; "><b>Fear:</b> </span
+          ><span id="fear" style="padding-left:10px;"> 0</span>%
+        </div>
+        <br />
+        <div class="image-txt-container">
+          <img
+            src="/assets/icons/happy.png"
+            alt=""
+            style="width:25px; padding-left:10px;"
+          />
+          <span style="padding-left:10px; "><b>Happy:</b> </span
+          ><span id="happy" style="padding-left:10px;"> 0</span>%
+        </div>
+        <br />
+        <div class="image-txt-container">
+          <img
+            src="/assets/icons/sad.png"
+            alt=""
+            style="width:25px; padding-left:10px;"
+          />
+          <span style="padding-left:10px; "><b>Sad:</b> </span
+          ><span id="sad" style="padding-left:10px;"> 0</span>%
+        </div>
+        <br />
+        <div class="image-txt-container" style="padding-bottom:20px;">
+          <img
+            src="/assets/icons/surprise.png"
+            alt=""
+            style="width:25px; padding-left:10px;"
+          />
+          <span style="padding-left:10px; "><b>Surprise:</b> </span
+          ><span id="surprise" style="padding-left:10px;"> 0</span>%
+        </div>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+      var bannersnack_embed = {
+        hash: "bd130t7zy",
+        width: 1080,
+        height: 1920,
+        t: 1574364899,
+        userId: 40111243,
+        type: "html5"
+      };
+    </script>
+    <script
+      type="text/javascript"
+      src="//cdn.bannersnack.com/iframe/embed.js"
+    ></script>
+
+    <script src="/src/js/jeelizFaceTransfer.js"></script>
+    <script src="/src/js/emotion.js"></script>
+    <script src="/src/js/main.js"></script>
+  </body>
+</html>
