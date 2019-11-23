@@ -1,6 +1,6 @@
 # SmartKiosk
 
-**Website: **
+**Website:**
 https://danielmarquesdm32.wixsite.com/insights
 
 
