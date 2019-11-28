@@ -1,9 +1,3 @@
-#!python
-# Example of a cherrypy application that serves static content,
-# as well as dynamic content.
-#
-# JMR@ua.pt 2016
-#
 # To run:
 #	python exampleApp.py
 
