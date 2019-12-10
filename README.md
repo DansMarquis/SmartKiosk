@@ -53,3 +53,9 @@ An Interactive KIOSK web application, using CherryPy, that allows the user to ge
 		In Map you can set source address and destination address by typing the name or just clicking on the map. You can also customize the map layer and turn on the traffic informations.
 
 		In Weather you get live information about the weather of the city (New York,US in the example).	
+
+
+**Smart Kiosk  2:**
+In /cherrypy npm install express, socket.io
+npm init
+npm start
