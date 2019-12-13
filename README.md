@@ -57,14 +57,18 @@ An Interactive KIOSK web application, using CherryPy, that allows the user to ge
 
 
 **Smart Kiosk  2:**
+
 In /cherrypy npm install express, socket.io
 npm init
 npm start
 
 
 **Insights Bus Control:**
+
 npm install express, socket.io
+
 npm init
+
 npm start
 
 or see the webapp in insightskiosk.epizy.com
