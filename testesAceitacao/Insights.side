@@ -1,0 +1,259 @@
+{
+  "id": "3d1c3773-ace5-4a7b-8a28-a286c992040c",
+  "version": "2.0",
+  "name": "Insights",
+  "url": "https://danielmarquesdm32.wixsite.com/insightscontent",
+  "tests": [{
+    "id": "cbd3a3c8-d7ca-4046-9170-b5f72583f8c5",
+    "name": "Milestone1_US1",
+    "commands": [{
+      "id": "edfe675d-215f-4646-9285-e617f27f3d4c",
+      "comment": "",
+      "command": "open",
+      "target": "/insightscontent",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28f5e990-a03d-455b-9839-76f4cc27e3c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=comp-k2qivmd0input",
+      "targets": [
+        ["id=comp-k2qivmd0input", "id"],
+        ["css=#comp-k2qivmd0input", "css:finder"],
+        ["xpath=//input[@id='comp-k2qivmd0input']", "xpath:attributes"],
+        ["xpath=//div[@id='comp-k2qivmd0']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "heineken@insights.pt"
+    }, {
+      "id": "ad910e37-c4ef-4a09-9adb-8f4eefce6dc8",
+      "comment": "",
+      "command": "type",
+      "target": "id=comp-k2qivmckinput",
+      "targets": [
+        ["id=comp-k2qivmckinput", "id"],
+        ["css=#comp-k2qivmckinput", "css:finder"],
+        ["xpath=//input[@id='comp-k2qivmckinput']", "xpath:attributes"],
+        ["xpath=//div[@id='comp-k2qivmck']/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "pass035"
+    }, {
+      "id": "139719e6-a218-42be-914c-58b137fc714a",
+      "comment": "",
+      "command": "click",
+      "target": "id=comp-k2qivme3label",
+      "targets": [
+        ["id=comp-k2qivme3label", "id"],
+        ["css=#comp-k2qivme3label", "css:finder"],
+        ["xpath=//span[@id='comp-k2qivme3label']", "xpath:attributes"],
+        ["xpath=//button[@id='comp-k2qivme3link']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48c6205e-8392-462c-bb5e-435bed7c2ee9",
+      "comment": "",
+      "command": "click",
+      "target": "id=comp-k2qmuieklabel",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "569b5107-2a68-4006-a7d6-fcdab94beeb4",
+      "comment": "",
+      "command": "click",
+      "target": "id=comp-k2qqdsmcinputWrapper",
+      "targets": [
+        ["id=comp-k2qqdsmcinputWrapper", "id"],
+        ["css=#comp-k2qqdsmcinputWrapper", "css:finder"],
+        ["xpath=//div[@id='comp-k2qqdsmcinputWrapper']", "xpath:attributes"],
+        ["xpath=//div[@id='comp-k2qqdsmcinputLabelWrapper']/div", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0db9fb5a-af3a-4c66-8b97-2c096b74c643",
+      "comment": "",
+      "command": "click",
+      "target": "id=comp-k2qqdsmccalendarmonthweek50day5dayContent",
+      "targets": [
+        ["id=comp-k2qqdsmccalendarmonthweek50day5dayContent", "id"],
+        ["css=#comp-k2qqdsmccalendarmonthweek50day5dayContent", "css:finder"],
+        ["xpath=//button[@id='comp-k2qqdsmccalendarmonthweek50day5dayContent']", "xpath:attributes"],
+        ["xpath=//td[@id='comp-k2qqdsmccalendarmonthweek50day5']/button", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'14')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a20747b-8806-4731-8eec-b1013f9382d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=comp-k2qsqb3binputWrapper",
+      "targets": [
+        ["id=comp-k2qsqb3binputWrapper", "id"],
+        ["css=#comp-k2qsqb3binputWrapper", "css:finder"],
+        ["xpath=//div[@id='comp-k2qsqb3binputWrapper']", "xpath:attributes"],
+        ["xpath=//div[@id='comp-k2qsqb3binputLabelWrapper']/div", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "329a040a-69f5-46f7-8458-f2896d10964d",
+      "comment": "",
+      "command": "click",
+      "target": "id=comp-k2qsqb3bcalendarmonthweek51day5dayContent",
+      "targets": [
+        ["id=comp-k2qsqb3bcalendarmonthweek51day5dayContent", "id"],
+        ["css=#comp-k2qsqb3bcalendarmonthweek51day5dayContent", "css:finder"],
+        ["xpath=//button[@id='comp-k2qsqb3bcalendarmonthweek51day5dayContent']", "xpath:attributes"],
+        ["xpath=//td[@id='comp-k2qsqb3bcalendarmonthweek51day5']/button", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[6]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'21')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df05abb2-3754-4ab3-af73-9928f5542f29",
+      "comment": "",
+      "command": "type",
+      "target": "id=comp-k2qpygvuinput",
+      "targets": [
+        ["id=comp-k2qpygvuinput", "id"],
+        ["css=#comp-k2qpygvuinput", "css:finder"],
+        ["xpath=//input[@id='comp-k2qpygvuinput']", "xpath:attributes"],
+        ["xpath=//div[@id='comp-k2qpygvu']/input", "xpath:idRelative"],
+        ["xpath=//div[11]/input", "xpath:position"]
+      ],
+      "value": "Banner"
+    }, {
+      "id": "b429d023-8c8b-44c5-9958-13b7fcd6de7e",
+      "comment": "",
+      "command": "type",
+      "target": "id=comp-k2qqhe78input",
+      "targets": [
+        ["id=comp-k2qqhe78input", "id"],
+        ["css=#comp-k2qqhe78input", "css:finder"],
+        ["xpath=//input[@id='comp-k2qqhe78input']", "xpath:attributes"],
+        ["xpath=//div[@id='comp-k2qqhe78']/input", "xpath:idRelative"],
+        ["xpath=//div[12]/input", "xpath:position"]
+      ],
+      "value": "geral@heineken.pt"
+    }, {
+      "id": "11417c11-0f1d-4891-bbf0-4c999fb5371b",
+      "comment": "",
+      "command": "type",
+      "target": "id=comp-k2qqesarinput",
+      "targets": [
+        ["id=comp-k2qqesarinput", "id"],
+        ["css=#comp-k2qqesarinput", "css:finder"],
+        ["xpath=//input[@id='comp-k2qqesarinput']", "xpath:attributes"],
+        ["xpath=//div[@id='comp-k2qqesar']/input", "xpath:idRelative"],
+        ["xpath=//div[13]/input", "xpath:position"]
+      ],
+      "value": "Heineken"
+    }, {
+      "id": "d56aaae1-ba34-4445-82e6-341b3d60aca3",
+      "comment": "",
+      "command": "type",
+      "target": "id=comp-k2qqi6tkinput",
+      "targets": [
+        ["id=comp-k2qqi6tkinput", "id"],
+        ["css=#comp-k2qqi6tkinput", "css:finder"],
+        ["xpath=//input[@id='comp-k2qqi6tkinput']", "xpath:attributes"],
+        ["xpath=//div[@id='comp-k2qqi6tk']/input", "xpath:idRelative"],
+        ["xpath=//div[15]/input", "xpath:position"]
+      ],
+      "value": "+351123456789"
+    }, {
+      "id": "60179886-019f-4256-a797-88b1ba4d7fae",
+      "comment": "",
+      "command": "type",
+      "target": "id=comp-k2qqibdbinput",
+      "targets": [
+        ["id=comp-k2qqibdbinput", "id"],
+        ["css=#comp-k2qqibdbinput", "css:finder"],
+        ["xpath=//input[@id='comp-k2qqibdbinput']", "xpath:attributes"],
+        ["xpath=//div[@id='comp-k2qqibdb']/input", "xpath:idRelative"],
+        ["xpath=//div[16]/input", "xpath:position"]
+      ],
+      "value": "Rua de Lisboa, Almada"
+    }, {
+      "id": "4a251f6e-1146-480a-8325-93d1fe29a243",
+      "comment": "",
+      "command": "click",
+      "target": "id=comp-k2qqiq9nradio0container",
+      "targets": [
+        ["id=comp-k2qqiq9nradio0container", "id"],
+        ["css=#comp-k2qqiq9nradio0container", "css:finder"],
+        ["xpath=//label[@id='comp-k2qqiq9nradio0container']", "xpath:attributes"],
+        ["xpath=//div[@id='comp-k2qqiq9nradio0']/label", "xpath:idRelative"],
+        ["xpath=//fieldset/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Image')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28c83039-f448-479d-a5b2-3a747e2c6c50",
+      "comment": "",
+      "command": "type",
+      "target": "id=comp-k2qqigtxinput",
+      "targets": [
+        ["id=comp-k2qqigtxinput", "id"],
+        ["css=#comp-k2qqigtxinput", "css:finder"],
+        ["xpath=//input[@id='comp-k2qqigtxinput']", "xpath:attributes"],
+        ["xpath=//div[@id='comp-k2qqigtx']/input", "xpath:idRelative"],
+        ["xpath=//div[17]/input", "xpath:position"]
+      ],
+      "value": "http://www.heineken.com/pt/~/resources/heineken/shared/wallpapers/heineken-wallpapers_26740_1280x800.jpg"
+    }, {
+      "id": "f7fb759c-119c-406b-9fc0-bf42bbb590ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=comp-k2qpygyplabel",
+      "targets": [
+        ["id=comp-k2qpygyplabel", "id"],
+        ["css=#comp-k2qpygyplabel", "css:finder"],
+        ["xpath=//span[@id='comp-k2qpygyplabel']", "xpath:attributes"],
+        ["xpath=//button[@id='comp-k2qpygyplink']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae46159f-c0d0-43c3-a918-bd299fce23fa",
+      "comment": "",
+      "command": "click",
+      "target": "id=comp-k2qmux9zlabel",
+      "targets": [
+        ["id=comp-k2qmux9zlabel", "id"],
+        ["css=#comp-k2qmux9zlabel", "css:finder"],
+        ["xpath=//span[@id='comp-k2qmux9zlabel']", "xpath:attributes"],
+        ["xpath=//button[@id='comp-k2qmux9zlink']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6320c80d-1233-4637-88c0-2af57868e7a6",
+    "name": "Milestone2_US1",
+    "commands": [{
+      "id": "df510cb4-38e6-4abe-860d-538d85d9910c",
+      "comment": "",
+      "command": "open",
+      "target": "file:///C:/Users/jattj/Desktop/ECT/Third/AMS/projeto/rep/SmartKiosk/DashbordInsights-Manager/dashboard.html",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ed0ebf0e-98a5-44a9-b05e-d97fe23eb841",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cbd3a3c8-d7ca-4046-9170-b5f72583f8c5"]
+  }],
+  "urls": ["https://danielmarquesdm32.wixsite.com/", "file:///C:/Users/jattj/Desktop/ECT/Third/AMS/projeto/rep/SmartKiosk/DashbordInsights-Manager", "https://danielmarquesdm32.wixsite.com/insightscontent"],
+  "plugins": []
+}
