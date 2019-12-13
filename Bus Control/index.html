@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>
+        <title>Insights Bus Control</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" type="image/png" href="/static/images/favicon.ico"/>
+        <link href="static/css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    </head>
+    <body>
+        <div id="map_canvas"></div>
+        <img id="logo" src="/static/images/logo.png" style="position:fixed;
+                left:0;
+        top:80px;
+        margin:0;
+        padding:0;
+        width:15%;"/>
+        <div id="panel" class="hidden">
+            <div>
+                <center><h3 style="color:white;">Bus Routes Map</h3></center>
+              
+            </div>
+            <div class="section">
+                <b>Time:</b> <span id="day_time"></span> 
+                <select id="time_multiply">
+                    <option value="1" selected="selected">1x</option>
+                    <option value="5">5x</option>
+                    <option value="10">10x</option>
+                    <option value="100">100x</option>
+                </select>
+                <br/>
+                <input type="button" id="geolocation_click" />
+                <input type="text" id="user_location" / >
+            </div>
+            <div id="vehicle_info" class="hidden section" data-type="panel">
+                <div>
+                    <b><center><span class="vehicle_name"></span> <input type="button" class="panel_collapsible expanded" /></center></b>
+                    <div id="image"><center><img id="theImg" src=""  width= 180px; /></center></centerA></div>
+                </div>
+                <div class="panel_content">
+                    <center><div>
+                        
+                        <input id="follow_trigger" type="button" value="Follow" data-value-toggle="STOP" class="button_follow" />
+                        <input id="route_show_trigger" type="button" value="Draw route" data-value-toggle="HIDE" class="button_draw"/>
+                    </div></center>
+
+                    <div id="vehicle_timetable_container">
+                        <table id="vehicle_timetable" class="panel_table">
+                            <thead>
+                                <tr>
+                                    <td>Nº</td>
+                                    <td class="station">Stops</td>
+                                    <td>Arr.</td>
+                                    <td>Dep.</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="station_info" class="hidden section" data-type="panel">
+                <div>
+                    <b>Stop:</b> <span class="station_name"></span> <input type="button" class="panel_collapsible expanded" />
+                </div>
+                <div class="panel_content">
+                    <table id="station_departures" class="panel_table">
+                        <thead>
+                            <tr>
+                                <td>Nº</td>
+                                <td class="wide">Bus</td>
+                                <td>To</td>
+                                <td>Dep.</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="vehicle_popup_container" class="hidden">
+            <div id="vehicle_popup">
+                <span class="vehicle_name"></span>
+                <br/>
+                <div id="image"><img id="theImg2" src=""  width= 180px; /></div>
+                <br/>
+                <p class="status"></p>
+
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDk9N6K_mZv9m0pCZdo4th50ryhSR0Gs6A&amp;sensor=false&amp;libraries=geometry,places"></script>
+        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.1"></script>
+        
+        <script src="static/js/infobox_packed.js"></script>
+        <script src="static/js/map.js"></script>
+    </body>
+</html>
