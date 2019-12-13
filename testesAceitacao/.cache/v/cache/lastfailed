@@ -1,3 +1,4 @@
 {
-  "test_milestone1US1.py::TestMilestone1US1::()::test_milestone1US1": true
+  "test_milestone1US1.py::TestMilestone1US1::()::test_milestone1US1": true, 
+  "test_milestone3US2.py::TestMilestone3US1::()::test_milestone3US1": true
 }

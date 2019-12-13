@@ -245,6 +245,72 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "cdd5f2bc-483f-44a2-87c6-da2c11d96b9b",
+    "name": "Milestone3_US2",
+    "commands": [{
+      "id": "bd3beade-1d1f-4388-8665-486a12f0ea38",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5002/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7515eaae-d8de-48f9-a947-d7de276bff0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-times",
+      "targets": [
+        ["css=.fa-times", "css:finder"],
+        ["xpath=//li[7]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e9ef75a-e08c-438c-8e07-4a66d33c41af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-map-marker",
+      "targets": [
+        ["css=.fa-map-marker", "css:finder"],
+        ["xpath=//li[4]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd8329e1-ce22-4e58-8c4e-5cb2d55efa56",
+      "comment": "",
+      "command": "click",
+      "target": "id=map",
+      "targets": [
+        ["id=map", "id"],
+        ["css=#map", "css:finder"],
+        ["xpath=//div[@id='map']", "xpath:attributes"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cddba9b-6746-4e62-afc3-b7ce2bf9f975",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(2)",
+      "targets": [
+        ["css=button:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='map']/div/div[6]/div/div/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Go to this location')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc7175ff-7356-431e-a2c9-b2ac6f189f81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ed0ebf0e-98a5-44a9-b05e-d97fe23eb841",
